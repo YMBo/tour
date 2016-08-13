@@ -11,5 +11,5 @@ __机票购买：__
 __风景欣赏：__
 ![logo](https://github.com/YMBo/-tour/blob/master/PC/scenery.png)  
 __旅游资讯：__
-![logo](https://github.com/YMBo/-tour/blob/master/PC/about.png)    
-  _[回到顶部](#readme)_
+![logo](https://github.com/YMBo/-tour/blob/master/PC/about.png)
+    _[回到顶部](#readme)_
