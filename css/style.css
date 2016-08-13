@@ -1,0 +1,76 @@
+
+
+
+/*旅行区*/
+
+#tour{
+	width:1263px;
+	height:1130px;	
+	margin:30px auto;
+}
+#tour .center{
+	text-align: center;
+}
+#tour .center h2{
+	font-size: 45px;
+	letter-spacing: 2px;
+	color:#666;
+	margin:10px 0;
+}
+#tour .center p{
+	color:#666;
+	margin:10px 0;
+}
+
+/*图片介绍区*/
+#tour figure{
+	display: inline-block;
+	width: 380px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	margin:15px 12px;
+	padding:4px;
+	position: relative;
+}
+#tour figure img{
+	/*去掉图片与容器间的缝隙，具体为啥能去掉不知道*/
+	vertical-align: middle;
+}
+#tour figcaption{
+	color:#777;
+	font-size: 14px;
+	padding:7px 0 5px 0;
+	letter-spacing: 1px;
+}
+#tour .title{
+	color:#333;
+	font-style: normal;
+}
+#tour .sat{
+	float: right;
+	color:#999;
+	font-style: normal;
+	font-size: 14px;
+}
+#tour .price{
+	color:#f60;
+}
+#tour .price strong{
+	font-size: 20px;
+	letter-spacing:1px;
+}
+#tour .type{
+	display: inline-block;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	font-style: normal;
+	background-color:#59b200;
+	letter-spacing: 1px;
+	text-align: center;
+	color:#fff;
+	position: absolute;
+	top:4px;
+	left: 4px;
+}
+

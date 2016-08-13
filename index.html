@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="auto" content='spider'>
+	<meta charset="UTF-8">
+	<title>蜘蛛旅行社</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+<!--body,nav,section需要标题大纲，一般nav是用来存放一组导航链接的,section一般不用来定义样式所以，header里用div.每个页面只有一个h1方便搜索引擎搜索-->
+	<header id='header'>
+		<div class='center'>
+			<h1 class="logo">蜘蛛旅行社</h1>
+			<nav style='overflow:hidden;'>
+				<!--为了大纲清晰，所以要加个标题-->
+				<h2 class="none">网站导航</h2>
+			<ul class="link">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="information.html" >旅游咨询</a></li>
+					<li><a href="buy.html">机票订购</a></li>
+					<li><a href="scenery.html">风景欣赏</a></li>
+					<li><a href="about.html">公司简介</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="search">
+		<div id="mask"></div>
+	<!--搜索框-->
+		<div class="center">
+			<!--如果搜索框放在这里会透明-->
+		</div>
+		<input class="search" id="inp" type="text" placeholder='请输入城市或景点'/>
+		<button class="button">搜索</button>
+		<!--鼠标滑过 遮罩层变色-->
+		<script type="text/javascript">
+			/*搜索框*/
+			var search=document.getElementById('inp');
+			var mask=document.getElementById('mask');
+			search.onfocus=opacity;
+			search.onblur=stop;
+			function opacity(){
+				mask.style.backgroundColor='rgba(0,0,0,.4)';
+			}
+			function stop(){
+				mask.style.backgroundColor='rgba(0,0,0,0)';
+			}
+		</script>
+	</div>
+
+
+	<div id="tour">
+		<section class='center'>
+			<h2>热门旅游</h2>
+			<p>国内旅游、国外旅游、自助旅游、自驾旅游、游轮签证、主题旅游等各种热门最新旅游推荐</p>
+		</section>
+		<figure>
+			<a href="#"><img src="image/tour1.jpg" alt='曼谷-芭</a>提雅6日游'></a>
+			<figcaption><strong class='title'>&lt;曼谷-芭提雅6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour2.jpg" alt='美国'></a>
+			<figcaption><strong class='title'>&lt;美国6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国际长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour3.jpg" alt='瑞典'></a>
+			<figcaption><strong class='title'>&lt;瑞典6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour4.jpg" alt='曼谷'></a>
+			<figcaption><strong class='title'>&lt;曼谷6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour5.jpg" alt='韩国'></a>
+			<figcaption><strong class='title'>&lt;韩国6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour6.jpg" alt='日本'></a>
+			<figcaption><strong class='title'>&lt;日本6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour7.jpg" alt='西班牙'></a>
+			<figcaption><strong class='title'>&lt;西班牙6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour8.jpg" alt='泰国'></a>
+			<figcaption><strong class='title'>&lt;泰国6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="image/tour9.jpg" alt='北京'></a>
+			<figcaption><strong class='title'>&lt;北京6日游&gt;</strong>包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费卷</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2865</strong> 起</span>
+			<em class='sat'>满意度77%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+	</div>
+		<footer id='foot'>
+			<div class="top">
+				<div class="block left ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>途牛旅游网</li>
+						<li>驴妈妈旅游网</li>
+						<li>携程旅游</li>
+						<li>中国青年旅行社</li>
+					</ul>
+				</div>
+				<div class="block center ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>途牛旅游网</li>
+						<li>驴妈妈旅游网</li>
+						<li>携程旅游</li>
+						<li>中国青年旅行社</li>
+					</ul>
+				</div>
+				<div class="block right ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>途牛旅游网</li>
+						<li>驴妈妈旅游网</li>
+						<li>携程旅游</li>
+						<li>中国青年旅行社</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				蜘蛛旅行社 | www.zz.com | 旅行经营许可证
+			</div>
+		</footer>
+</body>
+</html>
