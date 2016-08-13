@@ -1,0 +1,184 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-font-smoothing:antialiased;
+}
+.none{
+	display: none;
+}
+/*让整个导航区 100%*/
+#header{
+	/*这个宽度是为了大于最小分辨率1280时能自适应*/
+	width:100%;
+	/*这个最小宽度，是为了解决当缩小浏览器时因为width：100%；布局的改变，所以要有个限制*/
+	min-width: 1280px;
+	height: 70px;
+	background-color: #333;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+	position: relative;
+	z-index: 999;
+}
+/*内容区 固定大小*/
+#header .center{
+	width: 1263px;
+	height:70px;
+	margin:0 auto;
+}
+#header .logo{
+	width: 240px;
+	height:70px;
+	background-image: url(../image/logo.jpg);
+	text-indent: -9999px;
+	float: left;
+}
+/*导航样式*/
+#header  .link{
+	width: 700px;
+	height:70px;
+	float: right;
+	list-style: none;
+}
+#header .link li{
+	width:120px;
+	height: 70px;
+	background-color: #333;
+	text-align: center;
+	line-height: 70px;
+	color:#eee;
+	float: left;
+}
+#header .link a{
+	display: block;
+	text-decoration:none;
+	color:#eee;
+	width:100%;
+	height:100%;
+	transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+}
+/*hover 过的样式*/
+#header .link a:hover,#header .link .active{
+	background-color: #000;
+}
+/*search区*/
+#search{
+	/*这个100%是为了放大浏览器时，能自适应*/
+	width: 100%;
+	/*这个最小宽度是，当缩小浏览器小于1263px时，能保持结构的完整性*/
+	min-width: 1263px;
+	height:600px;
+	/*背景图，不重复，始终保持图片居中*/
+	/*首先，为了满足最小的1280分辨率，大图本身宽度必须大于1280，为主流分辨率一般小于1920
+	，所以图片宽度为1920可以满足所有用户*/
+	background:url(../image/search.jpg) no-repeat center;
+	/*为了定位搜索框，在搜索框中使用margin定位居中不行*/
+	position: relative;
+
+}
+/*遮罩层*/
+#search #mask{
+	width: 100%;
+	min-width: 1263px;
+	height:600px;
+	transition:all 0.8s;
+	-webkit-transition:all 0.8s;
+}
+
+#search .center{
+	width: 600px;
+	height:60px;
+	background-color: #000;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin:-30px -300px;
+	border-radius:30px;
+	opacity:0.5;
+	filter:alpha(opacity:50);
+}
+/*搜索框*/
+#search .search{
+	width:481px;
+	height:52px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin:-27px -296px;
+	border-radius:30px 0 0 30px;
+	background-color: #fff;
+	color:#666;
+	font-size: 24px;
+	font-weight: bold;
+	padding-left:20px;
+	border:1px solid #666;
+	outline: none;
+}
+
+/*按钮*/
+#search .button{
+	width:90px;
+	height:54px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin:-27px 206px;
+	border-radius:0 30px 30px 0;
+	color:#666;
+	background-color: #fff;
+	font-size: 24px;
+	border:1px solid #666;
+	cursor: pointer;
+}
+#search .button:hover{
+	background-color: #2ECC71;
+	color:#fff;
+}
+
+/*尾*/
+#foot{
+	height:361px;	
+	background-color: #222;
+}
+#foot .top{
+	height:280px;
+	width: 1263px;
+	margin: 0 auto;
+	text-align: center;
+}
+#foot .bottom{
+	height:80px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 80px;
+	color:#777;
+	background-color: #000;
+	border-top: 1px solid #444;
+}
+#foot .block{
+	width: 410px;
+	height: 280px;
+	display: inline-block;
+	color: #ccc;
+	text-align: left;
+	/*不加这个下边给h2加内边距时会产生布局错乱，不知道这个是为啥*/
+	/*vertical-align属性只会在inline-block水平的元素上期作用*/
+	vertical-align: top;
+	float: left;
+}
+#foot h2{
+	padding: 20px 0 5px 20px;
+	font-size: 24px;
+	font-weight: normal;
+}
+#foot hr{
+	border:1px solid #333;
+	width: 90%;
+}
+#foot ul{
+	list-style: none;
+	font-size: 18px;
+	color:#777;
+	text-indent: 20px;
+	/*这个是2倍的意思*/
+	line-height: 2;
+}

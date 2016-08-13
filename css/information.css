@@ -1,0 +1,281 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+#headline{
+	width: 100%;
+	/*这个最小宽度是，当缩小浏览器小于1263px时，能保持结构的完整性*/
+	min-width: 1263px;
+	height:300px;
+	/*背景图，不重复，始终保持图片居中*/
+	/*首先，为了满足最小的1280分辨率，大图本身宽度必须大于1280，为主流分辨率一般小于1920
+	，所以图片宽度为1920可以满足所有用户*/
+	background:url(../image/information.jpg) no-repeat center;
+}
+
+#headline .center{
+	width: 1263px;
+	height: 300px;
+	margin:0 auto;
+}
+#headline hgroup{
+	padding: 100px 0 0 50px;
+	color:#fff;
+}
+#headline h2{
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+#headline h3{
+	font-size: 20px;
+}
+#containter{
+	width: 1263px;
+	height: 1200px;
+	margin:30px auto;
+}
+#containter .sidebar{
+	width:340px;
+	float: right;
+}
+#containter .list{
+	width: 900px;
+	height: 1200px;
+	float: left;
+}
+
+#containter .sidebox{
+	margin:0 0 10px 0;
+	border:1px solid #eee;
+	text-align: center;
+	clear: both;
+}
+#containter .sidebox h2{
+	font-size: 20px;
+	font-weight: normal;
+	text-indent: 8px;
+	letter-spacing: 1px;
+	height:40px;
+	line-height: 40px;
+	background-color: #fafafa;
+	color:#666;
+}
+#containter .tag a,#containter .tag li{
+	list-style: none;
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	background-color: #eee;
+	line-height: 35px;
+	margin:2px 0;
+	color:#999;
+}
+#containter .tag a:hover{
+	background-color: #458b00;
+	color:#fff;
+}
+#containter figure{
+	display: inline-block;
+	color:#666;
+	padding:0 0 4px 0;
+}
+#containter .tourBox a{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin:2px 0;
+	color:#999;
+	text-align: left;
+	text-indent: 40px;
+}
+
+#containter .tourBox a.sky1{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+#containter .tourBox a.sky2{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+#containter .tourBox a.sky3{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+#containter .tourBox a.sky4{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+
+/*list区*/
+#containter .infor{
+	background-color: #eee;
+	height: 45px;
+}
+#containter ul{
+	list-style: none;
+
+}
+#containter a{
+	text-decoration: none;
+}
+#containter .left{
+	display: inline-block;
+	float: left;
+}
+#containter .right{
+	display: inline-block;
+	float: right;
+}
+#containter .left li{
+	display: inline-block;
+	width: 150px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	color:#666;
+}
+#containter .left li a{
+	display: block;
+	color:#666;
+}
+#containter .left li:first-child{
+	background-color: #fff;
+	border-top:2px solid #458b00 ;
+	position: relative;
+	left: 1px;
+
+}
+#containter .right li{
+	display: inline-block;
+	width: 60px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+#containter .right li a{
+	color:#666;
+	padding:3px 8px ;
+}
+#containter .right li a.checked,#containter .right li a:hover{
+	background-color:#458b00; 
+	color:#000;
+}
+#containter .content{
+	width: 898px;
+	height: 230px;
+	border:1px solid #eee;
+	margin:20px 0 0 0;
+	position: relative;
+}
+#containter .content footer{
+	width: 518px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	line-height: 30px;
+	text-indent: 25px;
+	background-color: #fafafa;
+	letter-spacing: 1px;
+}
+#containter .content time{
+	color: #458b00;
+}
+#containter .content img{
+	float: left;
+}
+#containter .content figcaption{
+	float: right;
+	width:518px;
+	height: 230px;
+}
+#containter .content hgroup{
+	width: 300px;
+}
+#containter .content h2{
+	padding:10px 0 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #333;
+}
+#containter .content h3{
+	line-height: 1.5;
+	padding:10px 0 10px 25px;
+}
+#containter .content ul{
+	padding:0 0 0 25px;
+	color: #666;
+	line-height:1.5;
+}
+#containter .content mark{
+	background-color: #fff;
+	border:1px solid #458b00;
+	border-radius:4px;
+	padding:0 5px;
+}
+#containter .content .buy{
+	position: absolute;
+	right: 30px;
+	top:55px;
+}
+#containter .buy .price{
+	font-size: 20px;
+	color:#f60;
+}
+#containter .buy .price strong{
+	font-size: 36px;
+}
+#containter .buy .price s{
+	color:#999;
+	font-size: 16px;
+}
+#containter .buy .now{
+	margin:10px 0 0 0;
+}
+#containter .buy .now a{
+	display: block;
+	width: 152px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f60;
+	color:#fff;
+	font-size: 20px;
+	text-align:center;
+	border-radius: 4px;
+}
+#containter  .content .type{
+	width:90px;
+	height:25px;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top:0;
+	left: 0;
+	background: #29b200;
+}
+#containter .content .desc{
+	position: absolute;
+	top:0;
+	right: 0;
+	background-color: #ccc;
+	width: 50px;
+	height:25px;
+	line-height: 25px;
+	text-align: center;
+	color: #f60;
+	font-weight:bold; 
+}
+#containter .list .more a{
+	color: #000;
+}
+#containter .list  .more{
+	width:200px;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	line-height: 40px;
+	text-align: center;
+	margin: 30px auto;
+}
+#containter .list .more:hover{
+	background-color: #fafafa;
+}

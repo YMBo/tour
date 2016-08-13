@@ -1,0 +1,272 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+#headline{
+	width: 100%;
+	/*这个最小宽度是，当缩小浏览器小于1263px时，能保持结构的完整性*/
+	min-width: 1263px;
+	height:300px;
+	/*背景图，不重复，始终保持图片居中*/
+	/*首先，为了满足最小的1280分辨率，大图本身宽度必须大于1280，为主流分辨率一般小于1920
+	，所以图片宽度为1920可以满足所有用户*/
+	background:url(../image/information.jpg) no-repeat center;
+}
+
+#headline .center{
+	width: 1263px;
+	height: 300px;
+	margin:0 auto;
+}
+#headline hgroup{
+	padding: 100px 0 0 50px;
+	color:#fff;
+}
+#headline h2{
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+#headline h3{
+	font-size: 20px;
+}
+#containter{
+	width: 1263px;
+	height: 1400px;
+	margin:30px auto;
+}
+#containter .sidebar{
+	width:340px;
+	float: right;
+}
+#containter .list{
+	width: 900px;
+	height: 1200px;
+	float: left;
+}
+
+#containter .sidebox{
+	margin:0 0 10px 0;
+	border:1px solid #eee;
+	text-align: center;
+	clear: both;
+}
+#containter .sidebox h2{
+	font-size: 20px;
+	font-weight: normal;
+	text-indent: 8px;
+	letter-spacing: 1px;
+	height:40px;
+	line-height: 40px;
+	background-color: #fafafa;
+	color:#666;
+}
+#containter .tag a,#containter .tag li{
+	list-style: none;
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	background-color: #eee;
+	line-height: 35px;
+	margin:2px 0;
+	color:#999;
+}
+#containter .tag a:hover{
+	background-color: #458b00;
+	color:#fff;
+}
+#containter figure{
+	display: inline-block;
+	color:#666;
+	padding:0 0 4px 0;
+}
+#containter .tourBox a{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin:2px 0;
+	color:#999;
+	text-align: left;
+	text-indent: 40px;
+}
+
+#containter .tourBox a.sky1{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+#containter .tourBox a.sky2{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+#containter .tourBox a.sky3{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+#containter .tourBox a.sky4{
+	background: #eee url(../image/icon1.png) no-repeat 5px center;
+}
+
+/*list区,机票购买*/
+#containter .airTicket h2, #containter .scenery h2, #containter .about h2{
+	color: #666;
+}
+#containter .airTicket hr, #containter .scenery hr,#containter .about hr{
+	border: 1px dotted #ccc;
+	margin:20px auto;
+}
+/*表单*/
+#containter .airTicket .fo{
+	height: 170px;
+	width: 900px;
+	font-size:20px;
+	position: relative;
+}
+#containter .airTicket ul{
+	overflow: hidden;
+}
+#containter .airTicket li{
+	float: left;
+}
+#containter .airTicket .fo_first li{
+	line-height: 25px;
+}
+#containter .airTicket .fo_first li a{
+	color: #fff;
+	margin-left: 20px;
+	text-align: center;
+	display: inline-block;
+	width: 49px;
+	height:25px;
+	line-height: 25px;
+	border-radius: 4px;
+	background-color: green;
+}
+#containter .airTicket .fo_city,#containter .airTicket .come_city{
+	margin-top: 20px;
+	line-height: 35px;
+}
+#containter .airTicket .fo_city li,#containter .airTicket .come_city li{
+	display: inline-block;
+	height: 35px;
+	text-align: left;
+}
+#containter .airTicket .fo_city input,#containter .airTicket .come_city input{
+	width:200px;
+	height: 33px;
+	font-size: 20px;
+	border-radius: 4px;
+	border:1px solid #ccc;
+	margin-left: 20px;
+	outline: none;
+}
+#containter .airTicket .fo_city .goTime,#containter .airTicket .come_city .goTime{
+	margin-left:25px; 
+}
+#containter .airTicket .fo .submit button{
+	width:80px;
+	line-height: 80px;
+	height: 80px;
+	color: #fff;
+	background-color: #f60;
+	position: absolute;
+	right: 100px;
+	top:45px;
+	border: none;
+	font-size: 24px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#containter .airTicket .new li{
+	display: inline-block;
+	font-size: 20px;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+#containter .airTicket .new li:first-child{
+	padding: 5px 0;
+	color:#7d7b7b;
+}
+#containter .airTicket .new li:nth-child(2){
+	background-color: #45b800;
+	color: #fff;
+}
+#containter .airTicket table{
+	margin-top: 20px;
+	font-size: 20px;
+	width: 100%;
+	border:1px solid #ddd;
+	border-collapse: collapse;
+}
+#containter .airTicket tr{
+	border: 1px solid #ddd;
+	height: 50px;
+	line-height: 50px;
+}
+#containter .airTicket td{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+#containter .airTicket tr:nth-child(2n){
+	background-color: #fafafa;
+}
+#containter .airTicket tr:hover{
+	background-color: #eee;
+}
+#containter .airTicket .price{
+	color: #f60;
+}
+#containter .airTicket .moreair{
+	color: #666;
+}
+#containter .airTicket .reserve{
+	display: inline-block;
+	width:75px;
+	line-height: 35px;
+	height: 35px;
+	color: #fff;
+	background-color: #f60;
+	border: none;
+	font-size: 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/*风景欣赏*/
+#containter .scenery figure{
+	display: inline-block;
+	width: 440px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	margin:10px 0;
+	position: relative;
+}
+#containter .scenery figcaption{
+	text-align: center;
+	padding:5px 0;
+}
+#containter .scenery figure img{
+	width: 440px;
+}
+#containter .scenery  .more{
+	width:200px;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	line-height: 40px;
+	text-align: center;
+	margin: 20px auto;
+}
+#containter .scenery  .more a{
+	text-decoration: none;
+	color: #666;
+}
+#containter .about p{
+	font-size: 20px;
+	color: #666;
+	line-height: 2;
+	margin:20px 0;
+}
+#containter .about ul{
+	font-size: 20px;
+	list-style: none;
+	line-height: 2;
+	margin:20px 0;
+}
