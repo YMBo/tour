@@ -1,4 +1,4 @@
-[我的博客](http://www.cnblogs.com/yymb/"悬停显示")
+[我的博客](http:www.cnblogs.com/yymb/)
 
 这是一个旅游网站的静态页面 
 包括：首页、风景欣赏页、机票购买页面、资讯页、简介页
