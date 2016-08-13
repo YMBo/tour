@@ -1,7 +1,6 @@
 表头1|表头2
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+-----|-----
+111|212
 
 
    这是一个旅游网站的静态页面 
