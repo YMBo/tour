@@ -1,6 +1,6 @@
 
-这是一个旅游网站的静态页面 
-包括：首页、风景欣赏页、机票购买页面、资讯页、简介页
+    这是一个旅游网站的静态页面 
+包括： 首页、风景欣赏页、机票购买页面、资讯页、简介页
 使用技术：尝试html5的一些标签，css，js，photoshop。  
 __首页：__
 ![logo](https://github.com/YMBo/-tour/blob/master/PC/index.png)  
